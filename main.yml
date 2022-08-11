@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  tasks:
+    - ansible.builtin.import_tasks: tasks/configure_dock.yml
+    - ansible.builtin.import_tasks: tasks/configure_trackpad.yml
+
+  handlers:
+    - name: Reload dock
+      ansible.builtin.shell: killall Dock
+
