@@ -3,6 +3,7 @@
   tasks:
     - ansible.builtin.import_tasks: tasks/configure_dock.yml
     - ansible.builtin.import_tasks: tasks/configure_trackpad.yml
+    - ansible.builtin.import_tasks: tasks/configure_app_preferences.yml
 
   handlers:
     - name: Reload dock
