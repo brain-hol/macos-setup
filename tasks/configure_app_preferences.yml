@@ -1,3 +1,5 @@
+# To find the app id, use the command: osascript -e 'id of app "SomeApp"'
+# For example: osascript -e 'id of app "Visual Studio Code"'
 ---
 - name: Allow for repeating key in apps
   community.general.osx_defaults:

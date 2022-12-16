@@ -8,4 +8,3 @@
   handlers:
     - name: Reload dock
       ansible.builtin.shell: killall Dock
-
