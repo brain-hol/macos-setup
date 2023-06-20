@@ -1,8 +1,0 @@
----
-- name: Set trackpad speed
-  community.general.osx_defaults:
-    domain: NSGlobalDomain
-    key: com.apple.trackpad.scaling
-    type: float
-    value: 1.0
-    state: present
