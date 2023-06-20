@@ -192,7 +192,8 @@ defaults write com.apple.dock wvous-br-corner -int 0
 mkdir -p $HOME/.local/state
 mkdir -p $HOME/.local/share
 mkdir -p $HOME/.config
-mkdir -p $HOME/.cache
+mkdir -p $HOME/Library/Caches/XdgCache
+ln -s $HOME/Library/Caches/XdgCache $HOME/.cache
 mkdir -p $HOME/.local/bin
 
 
