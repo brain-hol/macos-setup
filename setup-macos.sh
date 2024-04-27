@@ -48,24 +48,17 @@ echo \
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>com.local.KeyRemapping</string>
+    <string>local.environment</string>
     <key>ProgramArguments</key>
     <array>
-        <string>/usr/bin/hidutil</string>
-        <string>property</string>
-        <string>--set</string>
-        <string>{"UserKeyMapping":[
-            {
-              "HIDKeyboardModifierMappingSrc": 0x700000039,
-              "HIDKeyboardModifierMappingDst": 0x7000000E4
-            }
-        ]}</string>
+        <string>/bin/zsh</string>
+        <string>/Users/brian/.config/macos/env.zsh</string>
     </array>
     <key>RunAtLoad</key>
     <true/>
 </dict>
 </plist>
-' > ~/Library/LaunchAgents/com.local.KeyRemapping.plist
+' > ~/Library/LaunchAgents/local.environment.plist
 
 # To find the app id, use the command: osascript -e 'id of app "SomeApp"'
 # For example: osascript -e 'id of app "Visual Studio Code"'
