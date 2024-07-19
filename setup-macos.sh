@@ -39,27 +39,6 @@ defaults write com.apple.dock showAppExposeGestureEnabled -bool TRUE
 # Keyboard
 ################################################################################
 
-# To change Modifier keys
-# See https://hidutil-generator.netlify.app
-mkdir -p ~/Library/LaunchAgents
-echo \
-'<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-    <key>Label</key>
-    <string>local.environment</string>
-    <key>ProgramArguments</key>
-    <array>
-        <string>/bin/zsh</string>
-        <string>/Users/brian/.config/macos/env.zsh</string>
-    </array>
-    <key>RunAtLoad</key>
-    <true/>
-</dict>
-</plist>
-' > ~/Library/LaunchAgents/local.environment.plist
-
 # To find the app id, use the command: osascript -e 'id of app "SomeApp"'
 # For example: osascript -e 'id of app "Visual Studio Code"'
 for appId in "com.jetbrains.intellij" \
