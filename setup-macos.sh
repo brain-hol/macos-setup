@@ -45,6 +45,7 @@ for appId in "com.jetbrains.intellij" \
 	"com.jetbrains.goland" \
 	"com.jetbrains.pycharm" \
 	"com.jetbrains.WebStorm" \
+	"md.obsidian" \
 	"com.microsoft.VSCode"; do
     defaults write "${appId}" ApplePressAndHoldEnabled -bool FALSE
 done
